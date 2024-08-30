@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*cover or background*/
+.container{
+    height:248vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-position:100% 97% ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position:relative;
+    background-color: #1a589e34;   
+    background-size: 100% 70% ;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+/*header*/
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    width:100%;
+    height: 110px;
+    background-color: rgba(187, 178, 85, 0.32);
+    align-items: center;
+    margin:auto;
+    flex:1;
+    background-image: url(images/falling-green-leaves-new.png);
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    line-height: 100px ;
+    float: left;
+    margin:0px 0px 0px 60px;
+}
+ul{
+    margin-left: 5%;
+}
+ nav ul li a{ 
+    text-decoration:underline;
+    display: block;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 13, 21);
+    text-shadow: 0px 10px 30px  #ffffff;
+    font-weight:bold;
+ }
+ nav ul li a:hover{
+    color: rgb(70, 99, 120);
+ }
+
+
+/*Heading, subheading, text*/
+
+.content h3{
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#364382;
+}
+.content p{
+    font-size: 23px;
+    color:#6a7199;
+    line-height: 30px ;
+
+}
+.content p1{
+    font-size: 20px;
+    color:rgb(16, 71, 92);   
+    line-height: 30px ;
+
+}
+.content {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.content .button{
+    display: inline-block;
+    background: linear-gradient(45deg,#26337d, #0a53167a);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(15, 15, 99, 0.15);
+}
+.content .button:hover{
+    color: rgb(152, 214, 233); 
+ }
+
+
+/*picture 1*/
+.flip-picture1{
+    background-color: transparent;
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    left: 130px;
+    top:40px ;
+    position: relative;
+}
+.flip-picture1-inside{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.flip-picture1:hover .flip-picture1-inside {
+    transform: rotateY(180deg);
+  }
+
+
+
+/*for all pictures*/
+.flip-picture-front, .flip-picture-backside {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; 
+    position: absolute;
+  }
+.flip-picture-front {
+  background-color: rgba(198, 160, 160, 0);
+  color: rgb(36, 35, 35);
+  text-align: center;
+  font-size: large;
+  font-family: Georgia;
+}
+.flip-picture-backside {
+    background-color: rgba(33, 61, 40, 0.644);
+    border: 5px solid rgba(56, 59, 59, 0.598);
+    color: rgb(253, 254, 255);
+    transform: rotateY(180deg);
+    text-align: center;
+  }
+
+
+
+/*pictures style*/
+  img {
+    border: 5px solid rgba(56, 59, 59, 0.598);
+    border-radius: 5px;
+    padding: 1px;
+    width: 300px; 
+    height:200px;
+    background: linear-gradient(45deg,#dce0ee, #5c805c);
+  }
+  figcaption {
+    padding: 1px;
+    width: 300px; 
+    height:200px;
+    font-style: arial;
+    font-size:17px;
+    color: rgb(42, 71, 38);
+  }
+
+
+ /*picture 2*/
+.flip-picture2{
+    background-color: transparent;
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    left: 530px;
+    bottom:160px ;
+    position: relative;
+}
+.flip-picture2-inside{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    position: relative; 
+}
+.flip-picture2:hover .flip-picture2-inside {
+    transform: rotateY(180deg);
+  }
+
+
+
+/*picture 3*/
+.flip-picture3{ 
+    background-color: transparent;
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    left: 530px;
+    bottom:100px ;
+    position: relative;
+}
+.flip-picture3-inside{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    position: relative; 
+}
+.flip-picture3:hover .flip-picture3-inside {
+    transform: rotateY(180deg);
+}
+
+
+
+/*picture 4*/
+.flip-picture4{
+    background-color: transparent;
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    left: 130px;
+    bottom:300px ;
+    position: relative;
+}
+.flip-picture4-inside{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.flip-picture4:hover .flip-picture4-inside {
+    transform: rotateY(180deg);
+  }
+
+
+/*footer*/
+h6 {
+    text-align: center;
+    position:relative; 
+    bottom: 3%;
+  }
+
+
+/**************list of articles (articles.html)*****************/
+nav-articles {
+    width:100%;
+    background-color: rgba(79, 154, 200, 0.126);
+}
+nav-articles ul li{
+    display:list-item;
+    line-height: 30px ;
+    margin:5px 0px 0px 70px;
+}
+ nav-articles ul li a{
+    text-decoration:none;
+    font-size: 14px;
+    font-family: Arial;
+    color: rgb(16, 71, 92);  
+ }
+ nav-articles ul li a:hover{
+    color: rgb(145, 193, 238);  
+ }
+ .articles-text h1{
+     position:relative;
+     left:115px; 
+     top:50px;
+ }
+
+ 
+/***************Text (about.html)***************/
+ .about-text h1{
+    position:relative;
+    left: 115px; 
+    top: 50px;
+ }
+ .about-text p{
+    position:relative;
+    left: 115px; 
+    top: 50px;
+    color:rgb(16, 71, 92);
+    font-size: large;
+    line-height: 30px ;
+
+ }
+
+
+/***************Text (contact.html)***************/
+ .contact-text h1{
+    position:relative;
+    left: 115px; 
+    top: 50px;
+ }
+ .contact-text p{
+    position:relative; 
+    color: rgb(16, 71, 92);
+    font-size: large;
+    left:115px; 
+    top:50px;
+    line-height: 30px ;
+ }
+
+ .contact-text a{
+    color: rgb(45, 110, 126);  
+}
+ .contact-text a:hover{
+    color: rgb(108, 155, 189);  
+ }
